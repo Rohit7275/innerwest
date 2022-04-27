@@ -1,0 +1,230 @@
+ <!DOC TYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="service_&_pricing.css">
+      <link rel="stylesheet" type="text/css" href="global.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+      <header class="flex__spacebetween border__bottom header">
+          <div class="flex__start header--links__left flex__column">
+             <a id="home" href="index.html"><img src="images/logo.png" alt="logo" height="37px" width="107px"></a>
+             <div class="dropdown-menu">
+                 <div class="dropdown dropdown--menu">
+                    <div class="dropdown--icon"></div>
+                    <div class="dropdown--icon"></div>
+                    <div class="dropdown--icon"></div>
+                 </div>
+                 <div class="dropdown dropdown--absolute invisible dropdown--menu" id="dropdown--absolute">
+                    <div class="dropdown--icon--absolute"></div>
+                    <div class="dropdown--icon--absolute"></div>
+                    <div class="dropdown--icon--absolute"></div>
+                 </div>
+                 <div class="flex__start hover header--a--hide dropdown--content" id="menu">
+                    <a href="service_&_pricing.html">Service & Pricing</a>
+                    <a href="why_innerwest.html">About Us</a>
+                    <a href="howitworks.html">How it Works?</a>
+                    <a href="articles.html">Blog</a>
+                    <a href="contact_us.html">Contact Us</a>
+                 </div>
+             </div>
+          </div>
+
+          <div class="flex__end header--links__right flex__column hide--late">
+             <p>1300 444 555<br><span style="font-size: 12px; text-align: left;">enquiries MON-FRI 8:30am-5pm</span>
+             </p>
+             <a href="service_&_pricing.html" class="button__yellow hide">Prices & Book Online</a>
+          </div>
+      </header>
+
+		<main>
+            <section class="hero-section__small">
+                <div class=" hero-section__bottom">
+                    <div class="flex__center">
+                        <img src="images/google.png" alt="google" height="31px" width="93px">
+                        <img src="images/Group%205.svg" alt="rating">
+                        <p  class="text__small__14 p--position">245 Google Reviews</p>
+                    </div>
+                    <h1>Instant Pricing & Book Online</h1>
+                </div>
+            </section>
+
+            <section class="booking">
+                <div class="booking--details">
+                    <div class="details">
+                        <section class="email">
+                            <h2>Enter your email address</h2>
+                            <form class="input-icons">
+                                <img src="service_&_pricing_images/Group.svg">
+                                <input class="input-field" type="text" placeholder="Email">
+                            </form>
+                        </section>
+
+                        <section class="service">
+                            <h2>Select a cleaning service</h2>
+
+                            <div class="service--grid">
+                                <div class="service--column service--column--one">
+                                   <div>
+                                       <img src="service_&_pricing_images/Group2.svg">
+                                       <h2>Spring Clean</h2>
+                                       <span class="total__36">$95</span>
+                                       <span class="total__14">/ 1 hours</span>
+                                       <span class="total__12">$26/hour thereafter</span>
+                                       <p>If you’re moving out or need a spring clean this is perfect for booking a one-off deep clean.</p>
+                                       <a class="service--question">What’s included?</a>
+                                       <a class="service--question">How many hours do I need?</a>
+                                    </div>
+                                    <a class="select--button">Select</a>
+                                </div>
+                                <div class="service--column service--column--two">
+                                    <div>
+                                       <img src="service_&_pricing_images/Group3.svg">
+                                       <h2>One Time Clean</h2>
+                                       <span class="total__36">$90</span>
+                                       <span class="total__14">/ 1 hours</span>
+                                       <span class="total__12">$35/hour thereafter</span>
+                                       <p>Sometimes life becomes just too busy. Book a one off clean to help you get back on top of things.</p>
+                                       <a class="service--question">What’s included?</a>
+                                       <a class="service--question">How many hours do I need?</a>
+                                    </div>
+                                    <a class="select--button">Select</a>
+                                </div>
+                                <div class="service--column service--column--three">
+                                    <div>
+                                       <img  src="service_&_pricing_images/Group4.svg">
+                                       <h2>Regular Clean</h2>
+                                       <span class="total__36">$70</span>
+                                       <span class="total__14">/ 1 hours</span>
+                                       <span class="total__12">$30/hour thereafter</span>
+                                       <p>Book an regular weekly or fortnightly clean to keep your home clean at all times.</p>
+                                       <a class="service--question">What’s included?</a>
+                                       <a class="service--question">How many hours do I need?</a>
+                                    </div>
+                                    <a class="select--button">Select</a>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section class="bookng--detail">
+                            <h2>Booking Details</h2>
+                            <form class="detail--form">
+                                <label for="hours">How many hours will your cleaner be required?*</label><br>
+                                <div class="hours--icon">
+                                    <img src="service_&_pricing_images/Group145.svg">
+                                    <input class="hours-field" id="hours" type="number_format" value="1" max="6" min="2" >
+                                </div>
+                                 <label for="regular-clean">How often would you like your regular clean?*</label><br>
+                                <div class="radio">
+                                    <label class="container">
+                                       <span class="checkmark"></span>
+                                       <div class="clean-type">Weekly</div>
+                                      <input type="radio" checked="checked" name="radio">
+                                    </label>
+                                    <label class="container">
+                                       <span class="checkmark"></span>
+                                       <div class="clean-type">Fortnightly</div>
+                                      <input type="radio" name="radio">
+                                    </label>
+                                    <label class="container">
+                                       <span class="checkmark"></span>
+                                       <div class="clean-type">Multi-day</div>
+                                       <input type="radio" name="radio">
+                                    </label>
+                                </div>
+                                <label for="text-box">Please tell us if ‘Any Day’ suits.*</label><br>
+                                <p>If not, please tell us your preferred day/s so we can match the job to our cleaners’ availability.</p>
+                                <textarea id="text-box" name="text-area" rows="5"  class="textarea"></textarea>
+
+                            </form>
+                        </section>
+
+                        <section class="personal-information">
+                            <h2>Personal Information</h2>
+                            <form>
+                                <div class="contact--details">
+                                    <label for=contact-details>Contact details*</label><br>
+                                    <div class="name__flex">
+                                        <input class="margin__right" type="text" id="contact-details" name="first name" placeholder="First name">
+                                        <input type="text" id="contact-details" name="last name" placeholder="Last name">
+                                    </div>
+                                    <input type="number_format" id="contact-details" name="phone number" placeholder="Phone">
+                                </div>
+
+                                <div class="location">
+                                    <label for=address>Address*</label>
+                                    <div>
+                                        <div class="location-icon">
+                                            <img src="service_&_pricing_images/Grouplocation.svg">
+                                            <input type="text" id="address" name="address" placeholder="Address">
+                                        </div>
+                                        <div class="location-small">
+                                            <input class="margin__right" type="text" id="state" name="state" placeholder="State">
+                                            <input type="number_format" id="post-code" name="city" placeholder="Post-code">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                    <button type="submit" value="send" class="button__yellow__big">Book Now - Pay on the Day<img src="images/Group%20198.svg"></button>
+                    <p class="info">No contracts, cancel anytime</p>
+                </div>
+
+                <section class="final--price">
+                    <div class="final--price--details">
+                        <h2>Your booking summary</h2>
+                        <div class="final--details">
+                            <div>
+                                <div class="final--details__left">
+                                   <p class="final">Hours :</p><p class="final--details__right" id="final--hours">1 hours</p>
+                                </div>
+                                <div class="final--details__left">
+                                   <p class="final">Clean Type :</p><p class="final--details__right" id="clean--type">Weekly</p>
+                                </div>
+                                <div class="final--details__left">
+                                   <p class="final">Preferred Day :</p ><p class="final--details__right" id="preferred-day">N/A</p>
+                                </div>
+                                <div class="final--details__left">
+                                   <p class="final">Where :</p><p class="final--details__right" id="where">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="your-total">
+                            <p class="total__18">YOUR TOTAL</p>
+                            <p class="total__48">$0</p>
+                            <p class="total__14">In addition to your hours booked, you will recieve an extra hour FREE on your first service.</p>
+                            <p class="total__12">*Weekend rates will apply</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex__center__column">
+                <img src="images/logo-gray-1.png" alt="logo" width="110px" height="38px">
+                 <div class="flex__center hover">
+                    <a href="service_&_pricing.html">Service & Pricing</a>
+                    <a href="why_innerwest.html">About Us</a>
+                    <a href="howitworks.html">How it Works?</a>
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="articles.html">Blog</a>
+                    <a href="become_a_cleaner.html">Become a Cleaner</a>
+                </div>
+                <div class="social__flex">
+                    <a><img src="images/instagram-brands%20(3).svg"></a>
+                    <a><img src="images/Vector.svg"></a>
+                    <a><img src="images/twitter-square-brands.svg"></a>
+                </div>
+            </div>
+
+        </footer>
+        <script src="dropdown.js"></script>
+        <script src="booking.js"></script>
+    </body>
+</html>

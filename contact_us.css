@@ -1,0 +1,388 @@
+/*---------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------HERO SECTION SMALL----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+main .hero-section__small {
+	background-image: linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.5)), url(contact_us_images/Contact_Page_Image-1024x661.jpg);
+    padding-bottom: 60px;
+    background-position: right;
+}
+
+.contact--grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+.contact--grid div {
+    display: flex;
+    align-items: center;
+}
+
+.contact--grid div img {
+    height: 22px;
+    width: 22px;
+}
+
+main .hero-section__small h1
+{
+    margin-bottom: 30px;
+}
+
+.contact--grid span
+{
+    margin: 17px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------TWO COLUMN WITH FORM & FAQ------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+main .two-column--flex
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.flex--faq
+{
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+/*----------------------------------------------------------------*/
+/*------------------------------------------------------------FORM*/
+/*----------------------------------------------------------------*/
+
+
+.form
+{
+    max-width: 500px;
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.form h2
+{
+    margin: 31px 0 52px 0;
+}
+
+.two-column--section-one
+{
+    background-color: #f7f7f7;
+    padding: 140px 0;
+    display: flex;
+    justify-content: end;
+	 width: 50%;
+}
+
+input[type=text],input[type=number_format],input[type=email],textarea
+{
+    font-size: 16px;
+    line-height: 14px;
+    display: block;
+    background-color: #f7f7f7;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 16px;
+    padding: 22px;
+    color: #585858;
+    max-width: 100%;
+    width: 100%;
+}
+
+textarea
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+button
+{
+    font-size: 14px;
+}
+
+button.button__yellow__big
+{
+    border: 1px solid white;
+}
+
+/*----------------------------------------------------------------*/
+/*------------------------------------------------CUSTOM CHECK BOX*/
+/*----------------------------------------------------------------*/
+
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 42px;
+    padding-top: 2px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #585858;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 2px solid #FFC400;
+    background-color: #f7f7f7;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #FFC400;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*----------------------------------------------------------------*/
+/*-------------------------------------------------------------FAQ*/
+/*----------------------------------------------------------------*/
+
+.two-column--section-two
+{
+   padding: 140px 0;
+	width: 50%;
+}
+
+#faq
+{
+    margin: 0;
+}
+
+#faq .span--container
+{
+    margin: 45px 0 70px 0;
+}
+
+#faq .span--container div div
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    align-items: center;
+	 cursor: pointer;
+}
+
+#faq .span--container span
+{
+    font-size: 18px;
+    line-height: 150%;
+    color: #585858;
+}
+
+#faq .span--container img
+{
+    margin: 18px 10px;
+    flex-shrink: 0;
+}
+
+#faq .button__white__small
+{
+    width: max-content;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------MEDIA QUERY--------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 1024px)
+{
+
+    /*----------------------------------------------------------------*/
+    /*----------------------------------------------HERO SECTION SMALL*/
+    /*----------------------------------------------------------------*/
+
+    .contact--grid
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 10px;
+    }
+
+    /*----------------------------------------------------------------*/
+    /*--------------------------------------TWO COLUMN WITH FORM & FAQ*/
+    /*----------------------------------------------------------------*/
+
+	.two-column--section-one
+	{
+		width: 100%;
+	}
+
+	.two-column--section-two
+	{
+		width: 100%;
+	}
+
+	.flex--faq
+	{
+		margin: 0;
+		max-width: 100%;
+	}
+
+	main .two-column--flex
+	{
+		flex-wrap: wrap;
+	}
+
+    .form
+    {
+        max-width: 100%;
+    }
+
+    .two-column--section-one
+    {
+        justify-content: flex-start;
+        padding: 60px 0;
+    }
+
+    .two-column--section-two
+    {
+        padding: 60px 0;
+    }
+
+}
+
+@media(max-width: 768px)
+{
+    /*----------------------------------------------------------------*/
+    /*--------------------------------------TWO COLUMN WITH FORM & FAQ*/
+    /*----------------------------------------------------------------*/
+
+	.form
+	{
+		padding: 0 25px;
+	}
+
+	.flex--faq
+	{
+		padding: 0 25px;
+	}
+
+    /*----------------------------------------------------------------*/
+    /*-------------------------------------------------------------FAQ*/
+    /*----------------------------------------------------------------*/
+
+    #faq .span--container
+    {
+        margin: 20px 0 50px 0;
+    }
+}
+
+@media(max-width: 600px)
+{
+
+    .contact--grid { 
+        margin-top: 15px;
+    }
+
+	/*----------------------------------------------------------------*/
+	/*--------------------------------------TWO COLUMN WITH FORM & FAQ*/
+	/*----------------------------------------------------------------*/
+
+	.two-column--section-one
+	{
+		padding-bottom: 30px;
+	}
+
+    /*----------------------------------------------------------------*/
+    /*-------------------------------------------------------------FAQ*/
+    /*----------------------------------------------------------------*/
+
+    #faq h2
+    {
+        margin: 20px 0;
+    }
+
+    #faq .span--container span
+    {
+        font-size: 16px;
+    }
+
+    #faq .span--container img
+    {
+        margin: 10px;
+        height: 35px;
+        width: 35px;
+		  margin-left: 18px;
+    }
+
+    .two-column--section-two
+    {
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 480px) {
+    /* HERO SECTION SMALL
+    -------------------------------------------------- */
+
+    .contact--grid { 
+        margin-top: 0;
+    }
+
+    .contact--grid div img {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .contact--grid span {
+        font-size: 16px;
+    }
+
+    
+    /* End of HERO SECTION SMALL
+    -------------------------------------------------- */
+}

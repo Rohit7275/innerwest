@@ -1,0 +1,171 @@
+<!DOC TYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="contact_us.css">
+      <link rel="stylesheet" type="text/css" href="global.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<header class="flex__spacebetween border__bottom header">
+			 <div class="flex__start header--links__left flex__column">
+				  <a id="home" href="index.html"><img src="images/logo.png" alt="logo" height="37px" width="107px"></a>
+				  <div class="dropdown-menu">
+					   <div class="dropdown dropdown--menu">
+							 <div class="dropdown--icon"></div>
+							 <div class="dropdown--icon"></div>
+							 <div class="dropdown--icon"></div>
+					   </div>
+						<div class="dropdown dropdown--absolute invisible dropdown--menu" id="dropdown--absolute">
+							<div class="dropdown--icon--absolute"></div>
+							<div class="dropdown--icon--absolute"></div>
+							<div class="dropdown--icon--absolute"></div>
+						</div>
+					   <div class="flex__start hover header--a--hide dropdown--content" id="menu">
+							 <a href="service_&_pricing.html">Service & Pricing</a>
+							 <a href="why_innerwest.html">About Us</a>
+							 <a href="howitworks.html">How it Works?</a>
+							 <a href="articles.html">Blog</a>
+							 <a href="contact_us.html">Contact Us</a>
+					   </div>
+				  </div>
+			 </div>
+
+			 <div class="flex__end header--links__right flex__column hide--late">
+				  <p>1300 444 555<br><span style="font-size: 12px; text-align: left;">enquiries MON-FRI 8:30am-5pm</span>
+				  </p>
+				  <a href="service_&_pricing.html" class="button__yellow hide">Prices & Book Online</a>
+			 </div>
+		</header>
+
+        <main>
+            <section class="hero-section__small">
+                <div class="hero-section__bottom">
+                    <h1>Contact Us</h1>
+                    <div class="contact--grid">
+                        <div>
+                            <img src="contact_us_images/Group.svg"><span>1300 444 555</span>
+                        </div>
+                        <div>
+                            <img src="contact_us_images/Vector.svg">
+                            <span>Monday to Friday: 9:00am-  5:30pm </span>
+                        </div>
+                        <div>
+                            <img src="contact_us_images/Group23.svg"><span>123 First St, Melbourne VIC</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-column" id="faq">
+                <div class="two-column--flex" >
+                    <div class="two-column--section-one">
+
+                    <div class="form">
+
+                        <span class="smaller--text">PLEASE FILL THE FORM</span>
+                        <h2>GET IN TOUCH</h2>
+
+                        <form action="mailto:mohit@vmsdesigns.com" method="post" enctype="text/plain">
+
+                            <input type="text" id="name" name="name" placeholder="First Name*" required>
+
+                            <input type="email" id="email" name="email" placeholder="Email*">
+
+                            <input type="number_format" id="phone" name="phone" pattern="[0-9]{10}" title="Invalid number" placeholder="Phone" required>
+
+                            <input type="text" id="subrub" name="subrub" pattern="[0-9]{4}" title="Invalid number" placeholder="Your Suburb*" required>
+
+                            <textarea rows="6" name="comment" placeholder="Your Message*"></textarea>
+
+                            <label class="container">I would like to receive home cleaning special offers
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+
+                            <button type="submit" value="send" class="button__yellow__big">Submit<img src="images/Group%20198.svg"> </button>
+                        </form>
+                    </div>
+                    </div>
+
+                    <div class="two-column--section-two">
+
+                    <div class="flex--faq">
+                        <span class="smaller--text">FREQUENTLY ASKED QUESTIONS</span>
+                        <h2>FAQs</h2>
+
+								<div class="span--container">
+                            <div class="faq--dropdown">
+                                <div class="faq--question">
+                                    <span>Can I give the cleaner a key?
+                                    </span>
+                                    <img src="images/Group%201875.svg" class="rotate">
+                                </div>
+                                <div class="faq--answer" id="faq0">
+                                   <p>There are no lock in contracts! You can stop the service at anytime.
+                                   </p>
+                                </div>
+                            </div>
+                            <div class="faq--dropdown">
+                                <div class="faq--question">
+                                    <span>Do I get the same cleaner every time?</span>
+                                    <img src="images/Group%201875.svg" class="rotate">
+                                </div>
+                                <div class="faq--answer" id="faq1">
+                                   <p>Payment is due upon completion of the clean and is payable via cash or EFT. The recommended payment option is cash unless the cleaner has a preference for EFT. Payment is to made directly to your cleaner after each service, not to Inner West Domestics.</p>
+                                </div>
+                            </div>
+                            <div class="faq--dropdown">
+                                <div class="faq--question">
+                                    <span>Do I need to be home when the cleaner comes?</span>
+                                    <img src="images/Group%201875.svg" class="rotate">
+                                </div>
+                                <div class="faq--answer" id="faq2">
+                                   <p>For the initial clean you may want to meet your cleaning tech however this is not necessary. If you are not home you can leave a key so your cleaner can start cleaning upon arrival. Once the cleaning is finished the key will be left in a safe predetermined location that was communicated prior.</p>
+                                </div>
+                            </div>
+                            <div class="faq--dropdown">
+                                <div class="faq--question">
+                                    <span>Do I need to provide cleaning products?</span>
+                                    <img src="images/Group%201875.svg" class="rotate">
+                                </div>
+                                <div class="faq--answer" id="faq3">
+                                   <p>Yes it is better to use your cleaning equipment and products in your home. For Spring Clean services the cleaner will bring all necessary equipment and products.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                            <a href="howitworks.html" class="button__white__small">View All FAQs<img src="images/Group%20102.svg"></a>
+
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="flex__center__column">
+                <img src="images/logo-gray-1.png" alt="logo" width="110px" height="38px">
+                 <div class="flex__center hover">
+                    <a href="service_&_pricing.html">Service & Pricing</a>
+                    <a href="why_innerwest.html">About Us</a>
+                    <a href="howitworks.html">How it Works?</a>
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="articles.html">Blog</a>
+                    <a href="become_a_cleaner.html">Become a Cleaner</a>
+                </div>
+                <div class="social__flex">
+                    <a><img src="images/instagram-brands%20(3).svg"></a>
+                    <a><img src="images/Vector.svg"></a>
+                    <a><img src="images/twitter-square-brands.svg"></a>
+                </div>
+            </div>
+
+        </footer>
+		  <script src="dropdown.js"></script>
+		  <script src="faq-dropdown.js"></script>
+    </body>
+</html>

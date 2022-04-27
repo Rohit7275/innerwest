@@ -1,0 +1,238 @@
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------QUESTIONS------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.questions--grid
+{
+    display: grid;
+    grid-template-columns: 1fr 2.3fr;
+}
+
+.questions--grid--left
+{
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+/*    padding-left: 35%;*/
+    padding-top: 75px;
+}
+
+.grid--left--div
+{
+    padding: 0 30px 0 30%;
+    cursor: pointer;
+}
+
+.grid--left--div div
+{
+    padding: 35px 0;
+}
+
+.grid--left--div a
+{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.ques--container
+{
+   background-color: white;
+}
+
+.container--border
+{
+   border-bottom: 2px solid #e8e8e8;
+}
+
+.ques--border
+{
+   border-bottom: 2px solid #FFC400;
+}
+
+.questions--grid--right div
+{
+    max-width: 63%;
+    margin: 100px auto 190px auto;
+}
+
+.questions--grid--right h2
+{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 9px 0 50px 0;
+    margin: 0;
+}
+
+.questions--grid--right h3
+{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 42px;
+    margin-bottom: 5px;
+}
+
+.questions--grid--right p
+{
+    color: #585858;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+
+.questions--grid--right .button__yellow__big
+{
+    margin-top: 50px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------MEDIA QUERY--------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
+@media(max-width: 1024px)
+{
+
+
+    /*----------------------------------------------------------------*/
+    /*-------------------------------------------------------QUESTIONS*/
+    /*----------------------------------------------------------------*/
+
+    .questions--grid
+    {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .questions--grid--left
+    {
+        flex-direction: row;
+        padding: 0 20px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .grid--left--div
+    {
+        padding: 60px 0;
+        width: 230px;
+        text-align: center;
+    }
+
+    .grid--left--div a
+    {
+        font-size: 20px;
+    }
+
+    .grid--left--div div
+    {
+        padding: 0;
+        border: none;
+    }
+
+    .questions--grid--right
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .questions--grid--right div
+    {
+        margin-bottom: 100px;
+        padding: 0 20px;
+        max-width: 75%
+    }
+
+
+}
+
+
+@media(max-width: 768px)
+{
+
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------QUESTIONS*/
+    /*----------------------------------------------------------------*/
+
+    .grid--left--div
+    {
+        padding: 50px 0;
+    }
+
+   .questions--grid--right div
+   {
+      max-width: 80%;
+   }
+
+}
+
+@media(max-width: 600px)
+{
+
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------QUESTIONS*/
+    /*----------------------------------------------------------------*/
+
+    .grid--left--div
+    {
+        padding: 40px 0;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .grid--left--div div
+    {
+        padding: 0;
+        border: none;
+    }
+
+    .questions--grid--right div
+    {
+        margin: 70px auto;
+        padding: 0 20px;
+        max-width: 85%;
+    }
+}
+
+@media(max-width: 480px)
+{
+
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------QUESTIONS*/
+    /*----------------------------------------------------------------*/
+
+    .grid--left--div
+    {
+        padding: 25px 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .grid--left--div div
+    {
+        padding: 0;
+        border: none;
+    }
+
+    .grid--left--div a
+    {
+        font-size: 18px;
+    }
+
+    .questions--grid--right div
+    {
+        margin: 70px auto;
+        padding: 0 20px;
+    }
+
+    .questions--grid--right h2
+    {
+        font-size: 25px;
+        padding: 0 0 25px 0;
+    }
+
+
+}

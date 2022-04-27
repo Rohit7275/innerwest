@@ -1,0 +1,324 @@
+main h1
+{
+    font-size: 48px;
+    padding: 0 25px;
+    font-weight: 600;
+}
+
+main .button__yellow a
+{
+    font-size: 10px;
+}
+
+main .two-column span
+{
+    display: inline;
+    margin-right: 15px;
+    color: #585858;
+}
+
+main .button__yellow
+{
+    padding: 9px 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------HEADER-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.header--links__left.flex__column a,
+.header--links__right p
+{
+    color: black;
+}
+
+main
+{
+    padding-top: 150px;
+}
+
+.header #home img
+{
+    width: 107;
+    height: 37;
+}
+
+.dropdown--menu .dropdown--icon
+{
+   background-color: black;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------TWO COLUMN SECTION----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+main .two-column
+{
+    margin: 80px auto 90px;
+}
+
+main .two-column h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+main .two-column .button__yellow
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 10px;
+}
+
+
+main .review__flex__reverse
+{
+    align-items: center;
+    margin-top: 30px;
+}
+
+main .review__flex__reverse div span
+{
+    color: black;
+    font-size: 18px;
+}
+
+.two-column--pseudo--img.two-column--pseudo img
+{
+    object-position: center;
+}
+
+.two-column--pseudo--img.two-column--pseudo
+{
+   height: 400px;
+}
+
+.flex--row--2
+{
+   align-self: center;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------ARTICLES------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+h3
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 40px 0 18px;
+}
+
+.category
+{
+    font-size: 10px;
+}
+
+.articles--grid
+{
+    margin-bottom: 40px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 40px;
+}
+
+.articles--grid img
+{
+    width: 100%;
+/*    height: 100%;*/
+    object-fit: cover;
+}
+
+.grid--move
+{
+    position: relative;
+    bottom: 55px;
+    color: black;
+}
+
+main .flex__spacebetween
+{
+    padding: 0 25px;
+    font-size: 14px;
+}
+
+.page-number
+{
+    display: flex;
+    align-items: center;
+}
+
+.page-number span
+{
+    margin-right: 10px;
+}
+
+.articles--grid .button__yellow
+{
+    margin-left: 10px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------MEDIA QUERY--------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 1200px)
+{
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------------MAIN*/
+    /*----------------------------------------------------------------*/
+
+    main
+    {
+        padding-top: 200px;
+    }
+}
+
+@media(max-width: 1024px)
+{
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------------MAIN*/
+    /*----------------------------------------------------------------*/
+
+    main
+    {
+        padding-top: 150px;
+    }
+}
+
+@media(max-width: 768px)
+{
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------TWO COLUMN*/
+    /*----------------------------------------------------------------*/
+
+    main .two-column.max__width
+    {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+
+   main .two-column--pseudo--img
+   {
+      margin-bottom: 50px;
+   }
+
+   main
+   {
+      padding-top: 120px;
+   }
+
+    /*----------------------------------------------------------------*/
+    /*--------------------------------------------------------ARTICLES*/
+    /*----------------------------------------------------------------*/
+
+
+    .articles--grid
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    main .flex__spacebetween
+    {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 600px)
+{
+
+    main h1
+    {
+        font-size: 40px;
+    }
+
+
+   /*----------------------------------------------------------------*/
+   /*------------------------------------------------------TWO COLUMN*/
+   /*----------------------------------------------------------------*/
+
+   main .two-column--pseudo--img
+   {
+      margin-bottom: 35px;
+   }
+
+
+    /*----------------------------------------------------------------*/
+    /*--------------------------------------------------------ARTICLES*/
+    /*----------------------------------------------------------------*/
+
+    .articles--grid
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 15px;
+    }
+}
+
+@media(max-width: 480px)
+{
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------------MAIN*/
+    /*----------------------------------------------------------------*/
+
+    main
+    {
+        padding-top: 100px;
+    }
+
+
+    /*----------------------------------------------------------------*/
+    /*------------------------------------------------------TWO COLUMN*/
+    /*----------------------------------------------------------------*/
+
+
+    main .two-column h2
+    {
+        font-size: 24px;
+    }
+
+   main .two-column--pseudo::after
+   {
+      height: 65px;
+      width: 35px;
+   }
+
+   main .two-column--pseudo::before
+   {
+      height: 200px;
+      width: 160px;
+      bottom: -35px;
+   }
+
+   .two-column--pseudo--img.two-column--pseudo
+   {
+      height: 300px;
+   }
+
+    /*----------------------------------------------------------------*/
+    /*--------------------------------------------------------ARTICLES*/
+    /*----------------------------------------------------------------*/
+
+    .page-number a
+    {
+        width: 28px;
+        height: 28px;
+        margin: 0 5px;
+    }
+
+    .page-number span
+    {
+        margin-right: 5px;
+    }
+}
